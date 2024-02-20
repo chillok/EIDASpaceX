@@ -28,7 +28,6 @@
 		6937E83A2B83AB3D00A4E3D5 /* RocketViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937E8392B83AB3D00A4E3D5 /* RocketViewViewModel.swift */; };
 		6937E83C2B83AB4C00A4E3D5 /* CrewMemberViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937E83B2B83AB4C00A4E3D5 /* CrewMemberViewViewModel.swift */; };
 		6937E83F2B83AD2100A4E3D5 /* CrewCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937E83E2B83AD2100A4E3D5 /* CrewCellView.swift */; };
-		6937E8422B83AD5000A4E3D5 /* CrewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937E8412B83AD5000A4E3D5 /* CrewViewModel.swift */; };
 		6937E8442B83AEF700A4E3D5 /* Patch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937E8432B83AEF700A4E3D5 /* Patch.swift */; };
 		6937E8472B83B07700A4E3D5 /* CrewMemberToViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937E8462B83B07700A4E3D5 /* CrewMemberToViewModelMapper.swift */; };
 		6937E8492B83B08F00A4E3D5 /* RocketToViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937E8482B83B08F00A4E3D5 /* RocketToViewModelMapper.swift */; };
@@ -64,7 +63,6 @@
 		6937E8392B83AB3D00A4E3D5 /* RocketViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewViewModel.swift; sourceTree = "<group>"; };
 		6937E83B2B83AB4C00A4E3D5 /* CrewMemberViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewMemberViewViewModel.swift; sourceTree = "<group>"; };
 		6937E83E2B83AD2100A4E3D5 /* CrewCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewCellView.swift; sourceTree = "<group>"; };
-		6937E8412B83AD5000A4E3D5 /* CrewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewViewModel.swift; sourceTree = "<group>"; };
 		6937E8432B83AEF700A4E3D5 /* Patch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patch.swift; sourceTree = "<group>"; };
 		6937E8462B83B07700A4E3D5 /* CrewMemberToViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewMemberToViewModelMapper.swift; sourceTree = "<group>"; };
 		6937E8482B83B08F00A4E3D5 /* RocketToViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketToViewModelMapper.swift; sourceTree = "<group>"; };
@@ -171,6 +169,8 @@
 		6937E82D2B83A16B00A4E3D5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				69766CDF2B84ACAF00076C4C /* PatchSectionView.swift */,
+				6937E83E2B83AD2100A4E3D5 /* CrewCellView.swift */,
 				6937E8172B81435B00A4E3D5 /* LaunchDetailView.swift */,
 				6963DD052B83F266000D7CB3 /* RocketView.swift */,
 			);
@@ -223,23 +223,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		6937E83D2B83ACF300A4E3D5 /* Crew */ = {
-			isa = PBXGroup;
-			children = (
-				6937E8402B83AD4300A4E3D5 /* Views */,
-			);
-			path = Crew;
-			sourceTree = "<group>";
-		};
-		6937E8402B83AD4300A4E3D5 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				6937E83E2B83AD2100A4E3D5 /* CrewCellView.swift */,
-				69766CDF2B84ACAF00076C4C /* PatchSectionView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		6937E8452B83B06700A4E3D5 /* Mappers */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,8 +255,6 @@
 				6937E80E2B80F82D00A4E3D5 /* Extensions */,
 				6937E8042B80D6B000A4E3D5 /* Launches */,
 				6937E8162B81434D00A4E3D5 /* LaunchDetail */,
-				6937E83D2B83ACF300A4E3D5 /* Crew */,
-				6937E8412B83AD5000A4E3D5 /* CrewViewModel.swift */,
 				6937E8012B80D64600A4E3D5 /* Services */,
 				694DAB792B7FD25400861A71 /* EIDASpaceXApp.swift */,
 				694DAB7D2B7FD25600861A71 /* Assets.xcassets */,
@@ -375,7 +356,6 @@
 				6937E80D2B80F6FF00A4E3D5 /* LaunchCellView.swift in Sources */,
 				694DAB882B80159B00861A71 /* LaunchesView.swift in Sources */,
 				6937E8072B80D78300A4E3D5 /* LaunchesViewModel.swift in Sources */,
-				6937E8422B83AD5000A4E3D5 /* CrewViewModel.swift in Sources */,
 				6937E8152B8137EF00A4E3D5 /* LaunchesRouter.swift in Sources */,
 				6937E8342B83AAD800A4E3D5 /* LaunchDetailViewViewModel.swift in Sources */,
 				6937E8262B824BED00A4E3D5 /* LoadingView.swift in Sources */,
