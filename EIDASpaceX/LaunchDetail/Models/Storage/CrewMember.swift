@@ -2,7 +2,7 @@ import Foundation
 import SwiftData
 
 @Model
-class CrewMember: Codable, Identifiable {
+class CrewMember: Codable, Identifiable, ObservableObject {
     var id: String
     var name: String
     var image: String

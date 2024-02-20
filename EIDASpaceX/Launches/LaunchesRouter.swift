@@ -10,6 +10,6 @@ final class LaunchesRouter: LaunchesRouterProtocol {
         AnyView(LaunchDetailView(viewModel: 
                                     LaunchDetailViewModel(viewModel: viewModel,
                                                           webservice: Webservice(),
-                                                          storage: Storage())).modelContainer(Storage.shared.modelContainer))
+                                                          storage: Storage.shared)).modelContainer(Storage.shared.modelContainer))
     }
 }

@@ -20,7 +20,7 @@ class Storage: StorageProtocol {
     lazy var modelContainer: ModelContainer = {
         let schema = Schema([Launch.self, CrewMember.self, Rocket.self])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
+        
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
         } catch {
@@ -43,7 +43,6 @@ class Storage: StorageProtocol {
             try context.save()
         }
         catch {
-            print(error)
             throw StorageError.storeError
         }
     }

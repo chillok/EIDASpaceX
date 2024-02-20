@@ -164,8 +164,8 @@
             filePath = "EIDASpaceX/Launches/LaunchesViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "retrieveLaunches()"
             landmarkType = "7">
          </BreakpointContent>
@@ -180,8 +180,8 @@
             filePath = "EIDASpaceX/Launches/LaunchesViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "retrieveLaunches()"
             landmarkType = "7">
             <Locations>
@@ -279,18 +279,33 @@
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "A6A74E64-72A1-4BFD-9AA2-E706FAF43519 - 1d28469a1e7c34f7"
+                  uuid = "A6A74E64-72A1-4BFD-9AA2-E706FAF43519 - 7e5402f1fc71d6f3"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftData.ModelContainer in variable initialization expression of EIDASpaceX.Storage.modelContainer : SwiftData.ModelContainer"
+                  symbolName = "closure #1 () -&gt; SwiftData.ModelContainer in EIDASpaceX.Storage.modelContainer.getter : SwiftData.ModelContainer"
                   moduleName = "EIDASpaceX"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cillian/Downloads/EIDASpaceX/EIDASpaceX/Services/Storage.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "476">
+               </Location>
+               <Location
+                  uuid = "A6A74E64-72A1-4BFD-9AA2-E706FAF43519 - 7e5402f1fc71d6d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftData.ModelContainer in EIDASpaceX.Storage.modelContainer.getter : SwiftData.ModelContainer"
+                  moduleName = "EIDASpaceX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cillian/Downloads/EIDASpaceX/EIDASpaceX/Services/Storage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
                   offsetFromSymbolStart = "272">
                </Location>
                <Location
@@ -309,6 +324,38 @@
                   offsetFromSymbolStart = "272">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0B391360-BA6D-40D2-B5CC-578DC6BD6422"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EIDASpaceX/LaunchDetail/Views/RocketView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "init(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0DBAC4D3-8EA9-43BD-A37E-A9ACE302DC66"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EIDASpaceX/LaunchDetail/Views/LaunchDetailView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

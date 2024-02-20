@@ -69,7 +69,9 @@ struct LaunchesView<ViewModel: LaunchesViewModelProtocol>: View {
             }
             .navigationTitle(Constants.titleText)
             .onAppear(perform: {
-                viewModel.retrieveLaunches()
+                if viewModel.searchText.isEmpty {
+                    viewModel.retrieveLaunches()
+                }
             })
         }
     }
@@ -77,6 +79,6 @@ struct LaunchesView<ViewModel: LaunchesViewModelProtocol>: View {
 
 #Preview {
     LaunchesView(viewModel: LaunchesViewModel(webservice: Webservice(),
-                                              storage: Storage(),
+                                              storage: Storage.shared,
                                               router: LaunchesRouter()))
 }

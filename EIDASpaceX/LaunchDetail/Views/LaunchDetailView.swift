@@ -6,91 +6,40 @@ struct LaunchDetailView<ViewModel: LaunchDetailViewModelProtocol>: View {
     @ObservedObject var viewModel: ViewModel
     @Query private var crew: [CrewMember]
     
+    var filteredCrew: [CrewMember] {
+        crew.filter { member in
+            return viewModel.data.crew?.contains(member.id) == true
+        }
+    }
+    
     init(viewModel: ViewModel) {
         self.viewModel = viewModel
-        
-//        _crew = Query(filter: #Predicate<[CrewMember]> {
-//            viewModel.data.crew.flatMap { viewModel.contains($0.id) } == true
-//        })
-        
-//        _crew = Query(filter: #Predicate<CrewMember> { storedCrew in
-//            viewModel.crew.contains { vmCrew in
-//                vmCrew.id == storedCrew.id
-//            }
-//        })
     }
     
     var body: some View {
         VStack {
             List {
-                Section {
-                    VStack(alignment: .center) {
-                        VStack {
-                            if let patch = viewModel.data.patch, let url = URL(string: patch) {
-                                AsyncImage(url: url) { image in
-                                    image
-                                        .resizable()
-                                        .clipped()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(maxHeight: 200)
-                                        .padding()
-                                        .background(.ultraThinMaterial, in: RoundedRectangle(cornerSize: CGSize(width: 20, height: 10), style: .continuous))
-                                } placeholder: {
-                                    ProgressView()
+                PatchSectionView(viewModel: viewModel.data)
+
+                if !filteredCrew.isEmpty {
+                    Section {
+                        ScrollView(.horizontal) {
+                            LazyHStack {
+                                ForEach(filteredCrew) { member in
+                                    CrewCellView(member: member)
+                                        .frame(width: 100)
                                 }
                             }
-                            
-                            Text(viewModel.data.name)
-                                .multilineTextAlignment(.center)
-                                .font(.title)
-                                .fontDesign(.monospaced)
-                                .fontWeight(.bold)
-                                .foregroundStyle(.secondary)
-                                .padding()
+                            .padding()
                         }
+                    } header: {
+                        Text("Crew")
                     }
-                    .background(
-                        // blurred background patch
-                        Image("patch")
-                            .resizable()
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            .aspectRatio(contentMode: .fill)
-                            .blur(radius: 50)
-                            .edgesIgnoringSafeArea(.all)
-                    )
+                    .frame(height: 100)
                 }
-                .listRowSeparator(.hidden)
-                .frame(maxWidth: .infinity)
-
-                Section {
-                    ScrollView(.horizontal) {
-                        LazyHStack {
-                            
-                            ForEach(crew) { member in
-                                VStack {
-                                    Image(systemName: "person.circle")
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(width: 50, height: 50)
-                                    
-                                    Text("Firstname lastname")
-                                        .multilineTextAlignment(.center)
-                                        .fixedSize(horizontal: false, vertical: true)
-                                    
-                                }.frame(maxWidth: 100)
-                            }
-                        }
-                        .padding()
-                    }
-
-                } header: {
-                    Text("Crew")
-                }
-                    
-                Section {
-                    
-                } header: {
-                    Text("Rocket")
+                
+                if let id = viewModel.data.rocket {
+                    RocketView(id: id)
                 }
             }
             .listStyle(PlainListStyle())
@@ -105,5 +54,5 @@ struct LaunchDetailView<ViewModel: LaunchDetailViewModelProtocol>: View {
 
 #Preview {
     LaunchDetailView(viewModel: LaunchDetailViewModel(viewModel: .init(id: "sadasd", flightNumber: 2, name: "5dftgyuhn"), webservice: Webservice(), 
-                                      storage: Storage()))
+                                                      storage: Storage()))
 }

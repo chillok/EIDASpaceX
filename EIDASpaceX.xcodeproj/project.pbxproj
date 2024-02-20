@@ -27,7 +27,7 @@
 		6937E8342B83AAD800A4E3D5 /* LaunchDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937E8332B83AAD800A4E3D5 /* LaunchDetailViewViewModel.swift */; };
 		6937E83A2B83AB3D00A4E3D5 /* RocketViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937E8392B83AB3D00A4E3D5 /* RocketViewViewModel.swift */; };
 		6937E83C2B83AB4C00A4E3D5 /* CrewMemberViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937E83B2B83AB4C00A4E3D5 /* CrewMemberViewViewModel.swift */; };
-		6937E83F2B83AD2100A4E3D5 /* CrewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937E83E2B83AD2100A4E3D5 /* CrewView.swift */; };
+		6937E83F2B83AD2100A4E3D5 /* CrewCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937E83E2B83AD2100A4E3D5 /* CrewCellView.swift */; };
 		6937E8422B83AD5000A4E3D5 /* CrewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937E8412B83AD5000A4E3D5 /* CrewViewModel.swift */; };
 		6937E8442B83AEF700A4E3D5 /* Patch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937E8432B83AEF700A4E3D5 /* Patch.swift */; };
 		6937E8472B83B07700A4E3D5 /* CrewMemberToViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937E8462B83B07700A4E3D5 /* CrewMemberToViewModelMapper.swift */; };
@@ -38,6 +38,8 @@
 		694DAB7E2B7FD25600861A71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694DAB7D2B7FD25600861A71 /* Assets.xcassets */; };
 		694DAB812B7FD25600861A71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694DAB802B7FD25600861A71 /* Preview Assets.xcassets */; };
 		694DAB882B80159B00861A71 /* LaunchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DAB872B80159B00861A71 /* LaunchesView.swift */; };
+		6963DD062B83F266000D7CB3 /* RocketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6963DD052B83F266000D7CB3 /* RocketView.swift */; };
+		69766CE02B84ACAF00076C4C /* PatchSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69766CDF2B84ACAF00076C4C /* PatchSectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +63,7 @@
 		6937E8332B83AAD800A4E3D5 /* LaunchDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailViewViewModel.swift; sourceTree = "<group>"; };
 		6937E8392B83AB3D00A4E3D5 /* RocketViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewViewModel.swift; sourceTree = "<group>"; };
 		6937E83B2B83AB4C00A4E3D5 /* CrewMemberViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewMemberViewViewModel.swift; sourceTree = "<group>"; };
-		6937E83E2B83AD2100A4E3D5 /* CrewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewView.swift; sourceTree = "<group>"; };
+		6937E83E2B83AD2100A4E3D5 /* CrewCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewCellView.swift; sourceTree = "<group>"; };
 		6937E8412B83AD5000A4E3D5 /* CrewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewViewModel.swift; sourceTree = "<group>"; };
 		6937E8432B83AEF700A4E3D5 /* Patch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patch.swift; sourceTree = "<group>"; };
 		6937E8462B83B07700A4E3D5 /* CrewMemberToViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewMemberToViewModelMapper.swift; sourceTree = "<group>"; };
@@ -73,6 +75,8 @@
 		694DAB7D2B7FD25600861A71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		694DAB802B7FD25600861A71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		694DAB872B80159B00861A71 /* LaunchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchesView.swift; path = EIDASpaceX/Launches/Views/LaunchesView.swift; sourceTree = SOURCE_ROOT; };
+		6963DD052B83F266000D7CB3 /* RocketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketView.swift; sourceTree = "<group>"; };
+		69766CDF2B84ACAF00076C4C /* PatchSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchSectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				6937E8172B81435B00A4E3D5 /* LaunchDetailView.swift */,
+				6963DD052B83F266000D7CB3 /* RocketView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,7 +234,8 @@
 		6937E8402B83AD4300A4E3D5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6937E83E2B83AD2100A4E3D5 /* CrewView.swift */,
+				6937E83E2B83AD2100A4E3D5 /* CrewCellView.swift */,
+				69766CDF2B84ACAF00076C4C /* PatchSectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -354,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6963DD062B83F266000D7CB3 /* RocketView.swift in Sources */,
 				6937E84B2B83B6AE00A4E3D5 /* Storage+CrewMember.swift in Sources */,
 				6937E80B2B80E5A100A4E3D5 /* Launch.swift in Sources */,
 				6937E83A2B83AB3D00A4E3D5 /* RocketViewViewModel.swift in Sources */,
@@ -377,9 +384,10 @@
 				6937E8282B824C1000A4E3D5 /* FailedView.swift in Sources */,
 				6937E8132B812A4500A4E3D5 /* DataSatte.swift in Sources */,
 				6937E83C2B83AB4C00A4E3D5 /* CrewMemberViewViewModel.swift in Sources */,
+				69766CE02B84ACAF00076C4C /* PatchSectionView.swift in Sources */,
 				6937E8242B823FE300A4E3D5 /* Array+LaunchViewViewModel.swift in Sources */,
 				6937E8442B83AEF700A4E3D5 /* Patch.swift in Sources */,
-				6937E83F2B83AD2100A4E3D5 /* CrewView.swift in Sources */,
+				6937E83F2B83AD2100A4E3D5 /* CrewCellView.swift in Sources */,
 				694DAB7A2B7FD25400861A71 /* EIDASpaceXApp.swift in Sources */,
 				6937E8182B81435B00A4E3D5 /* LaunchDetailView.swift in Sources */,
 				6937E8472B83B07700A4E3D5 /* CrewMemberToViewModelMapper.swift in Sources */,

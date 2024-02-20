@@ -49,7 +49,9 @@ class LaunchesViewModel: LaunchesViewModelProtocol, ObservableObject {
     @Published var selection = LaunchesViewSelection.all {
         didSet {
             Task {
-                await filterLaunches(with: selection)
+                await MainActor.run {
+                    launches = .loaded(filter(cachedLaunches, with: selection))
+                }
             }
         }
     }
@@ -57,10 +59,12 @@ class LaunchesViewModel: LaunchesViewModelProtocol, ObservableObject {
     @Published var searchText: String = "" {
         didSet {
             Task {
-                if searchText == "" {
-                    await resetLaunches()
-                } else {
-                    await filterLaunches(with: searchText)
+                await MainActor.run {
+                    if searchText == "" {
+                        launches = .loaded(filter(cachedLaunches, with: selection))
+                    } else {
+                        launches = .loaded(filter(cachedLaunches, with: searchText))
+                    }
                 }
             }
         }
@@ -118,7 +122,7 @@ class LaunchesViewModel: LaunchesViewModelProtocol, ObservableObject {
     
     @MainActor
     func resetLaunches() {
-        launches = .loaded(cachedLaunches)
+        
     }
     
     @MainActor
@@ -133,21 +137,30 @@ class LaunchesViewModel: LaunchesViewModelProtocol, ObservableObject {
         self.launches = .loading
     }
     
-    @MainActor
-    private func filterLaunches(with selection: LaunchesViewSelection) {
-        launches = .loaded(cachedLaunches.filter { model in
+//    @MainActor
+//    private func filterLaunches(with selection: LaunchesViewSelection) {
+//        launches = .loaded(cachedLaunches.filter { model in
+//            switch selection {
+//            case .all: return true
+//            case .failed: return model.success == false
+//            case .successful: return model.success == true
+//            }
+//        })
+//    }
+    
+    private func filter(_ launches: [LaunchViewViewModel], with selection: LaunchesViewSelection) -> [LaunchViewViewModel] {
+        launches.filter { model in
             switch selection {
             case .all: return true
             case .failed: return model.success == false
             case .successful: return model.success == true
             }
-        })
+        }
     }
     
-    @MainActor
-    private func filterLaunches(with text: String) {
-        launches = .loaded(cachedLaunches.filter { model in
+    private func filter(_ launches: [LaunchViewViewModel], with text: String) -> [LaunchViewViewModel] {
+        filter(launches.filter { model in
             model.name.contains(text)
-        })
+        }, with: selection)
     }
 }
