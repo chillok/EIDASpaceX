@@ -5,14 +5,15 @@ struct LaunchToViewModelMapper {
     // we'll create local formatters to save on performance, as they're expensive to create
     
     let utcISOFormatter: ISO8601DateFormatter = {
-        let fotmatter = ISO8601DateFormatter()
-        fotmatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds ]
-        return fotmatter
+        let formatter = ISO8601DateFormatter()
+        formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds ]
+        return formatter
     }()
     
-    let localISOFormatter: ISO8601DateFormatter = {
-        let fotmatter = ISO8601DateFormatter()
-        return fotmatter
+    let localISOFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        return formatter
     }()
     
     func map(launch item: Launch) -> LaunchViewViewModel {
@@ -24,7 +25,9 @@ struct LaunchToViewModelMapper {
         
         var dateLocal: Date?
         if let dateLocalString = item.dateLocal {
-            dateLocal = localISOFormatter.date(from: dateLocalString)
+            
+            let trimmed = String(dateLocalString.dropLast(6))
+            dateLocal = localISOFormatter.date(from: trimmed)
         }
         
         return .init(id: item.id,

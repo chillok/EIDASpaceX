@@ -19,6 +19,8 @@ class CrewMember: Codable, Identifiable, ObservableObject {
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
+        let id = try container.decode(String.self, forKey: .id)
+        print(id)
         self.id = try container.decode(String.self, forKey: .id)
         self.image = try container.decode(String.self, forKey: .image)
         self.name = try container.decode(String.self, forKey: .name)

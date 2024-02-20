@@ -3,4 +3,150 @@
    uuid = "B94CD77E-FA9A-4CA2-A2CF-02EEC2C2A493"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C41EB7C6-E69C-41C4-B149-A06497C54A30"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EIDASpaceX/LaunchDetail/Models/Storage/CrewMember.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "init(id:name:image:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C41EB7C6-E69C-41C4-B149-A06497C54A30 - f6010b20956354b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EIDASpaceX.CrewMember.__allocating_init(id: Swift.String, name: Swift.String, image: Swift.String) -&gt; EIDASpaceX.CrewMember"
+                  moduleName = "EIDASpaceX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cillian/Downloads/EIDASpaceX/EIDASpaceX/LaunchDetail/Models/Storage/CrewMember.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "C41EB7C6-E69C-41C4-B149-A06497C54A30 - 772d963bf5cb3281"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EIDASpaceX.CrewMember.init(id: Swift.String, name: Swift.String, image: Swift.String) -&gt; EIDASpaceX.CrewMember"
+                  moduleName = "EIDASpaceX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///var/folders/72/d_v0m4mj4ln79b8zgk9_1b240000gn/T/swift-generated-sources/@__swiftmacro_10EIDASpaceX10CrewMember5ModelfMm_.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2"
+                  endingLineNumber = "2"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "406B35F7-363E-41A5-80ED-F85F9895DEB2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EIDASpaceX/LaunchDetail/Models/Storage/CrewMember.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "406B35F7-363E-41A5-80ED-F85F9895DEB2 - fed550c79d87be91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EIDASpaceX.CrewMember.init(from: Swift.Decoder) throws -&gt; EIDASpaceX.CrewMember"
+                  moduleName = "EIDASpaceX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cillian/Downloads/EIDASpaceX/EIDASpaceX/LaunchDetail/Models/Storage/CrewMember.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "406B35F7-363E-41A5-80ED-F85F9895DEB2 - fed550c79d87be91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EIDASpaceX.CrewMember.init(from: Swift.Decoder) throws -&gt; EIDASpaceX.CrewMember"
+                  moduleName = "EIDASpaceX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cillian/Downloads/EIDASpaceX/EIDASpaceX/LaunchDetail/Models/Storage/CrewMember.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "380">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "969A643B-F889-46A4-B535-41B503896100"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EIDASpaceX/LaunchDetail/Models/Storage/CrewMember.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "encode(to:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "969A643B-F889-46A4-B535-41B503896100 - e8ba57895ae7e89b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EIDASpaceX.CrewMember.encode(to: Swift.Encoder) throws -&gt; ()"
+                  moduleName = "EIDASpaceX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cillian/Downloads/EIDASpaceX/EIDASpaceX/LaunchDetail/Models/Storage/CrewMember.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  uuid = "969A643B-F889-46A4-B535-41B503896100 - e8ba57895ae7e89b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EIDASpaceX.CrewMember.encode(to: Swift.Encoder) throws -&gt; ()"
+                  moduleName = "EIDASpaceX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cillian/Downloads/EIDASpaceX/EIDASpaceX/LaunchDetail/Models/Storage/CrewMember.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

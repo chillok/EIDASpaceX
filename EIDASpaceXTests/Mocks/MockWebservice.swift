@@ -23,4 +23,11 @@ class MockWebservice: WebserviceProtocol {
         retrieveRocketsCalled = true
         return retrieveRocketsResult
     }
+    
+    var dataCalled = false
+    var dataResult = Data()
+    func data(for request: URLRequest) async throws -> Data {
+        dataCalled = true
+        return dataResult
+    }
 }

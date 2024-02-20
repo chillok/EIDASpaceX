@@ -1,5 +1,12 @@
 import SwiftUI
 
+private struct Constants {
+    static let missionSuccess = "Mission Success"
+    static let missionFailed = "Unsuccessful Launch"
+    static let missionUnknown = "Mission Result Unknown"
+}
+
+/// A view for showing a single Launch item
 struct LaunchCellView: View {
     
     var model: LaunchViewViewModel
@@ -35,16 +42,16 @@ struct LaunchCellView: View {
                         VStack {
                             if let dateUTC = model.dateUTC {
                                 HStack {
-                                    Text("🕑")
+                                    Image(systemName: "clock.fill")
                                     Text(dateUTC.readableDate)
                                         .textCase(.uppercase)
                                 }
                                 .font(.footnote)
                                 .foregroundStyle(.secondary)
                             }
-                            if let dateLocal = model.dateUTC {
+                            if let dateLocal = model.dateLocal {
                                 HStack {
-                                    Text("🇮🇪")
+                                    Image(systemName: "mappin.and.ellipse.circle.fill")
                                     Text(dateLocal.readableDate)
                                         .textCase(.uppercase)
                                 }
@@ -95,9 +102,9 @@ extension LaunchViewViewModel {
     
     var successLabel: String {
         if let success {
-            return success ? "Mission Success" : "Unsuccessful Launch"
+            return success ? Constants.missionSuccess : Constants.missionFailed
         }
-        return "Mission Result Unknown"
+        return Constants.missionUnknown
     }
     
     var successDescriptionColor: Color {

@@ -1,5 +1,11 @@
 import SwiftUI
 
+private struct Constants {
+    static let failedText = "Failed to load Launches. Please try again later."
+    static let reloadText = "Reload"
+}
+
+
 struct FailedView: View {
     
     init(reload: @escaping () -> Void) {
@@ -12,13 +18,13 @@ struct FailedView: View {
         VStack {
             Spacer()
             
-            Text("Failed to load Launches. Please try again later.")
+            Text(Constants.failedText)
                 .font(.callout)
             
             Button(action: {
                 reload()
             }, label: {
-                Text("Reload")
+                Text(Constants.reloadText)
                             .padding()
                             .foregroundColor(.white)
                             .background(

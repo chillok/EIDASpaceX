@@ -10,7 +10,6 @@ final class LaunchesViewModelTests: XCTestCase {
 
     override func setUpWithError() throws {
         webservice = MockWebservice()
-        webservice = MockWebservice()
         storage = MockStorage()
         router = MockRouter()
     }

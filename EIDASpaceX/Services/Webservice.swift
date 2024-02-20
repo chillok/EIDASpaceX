@@ -5,9 +5,11 @@ protocol WebserviceProtocol {
     func retrieveLaunches() async throws -> [Launch]
     func retrieveCrew() async throws -> [CrewMember]
     func retrieveRockets() async throws -> [Rocket]
+    
+    func data(for request: URLRequest) async throws -> Data
 }
 
-struct Webservice: WebserviceProtocol {
+class Webservice: WebserviceProtocol {
     
     func retrieveLaunches() async throws -> [Launch] {
         let url = URL(string: "https://api.spacexdata.com/v4/launches")!
@@ -26,8 +28,13 @@ struct Webservice: WebserviceProtocol {
     
     private func retrieve<T: Decodable>(from url: URL) async throws -> T {
         let request = URLRequest(url: url)
-        let (data, _) = try await URLSession.shared.data(for: request)
+        let data = try await data(for: request)
         let decoder = JSONDecoder()
         return try decoder.decode(T.self, from: data)
+    }
+    
+    func data(for request: URLRequest) async throws -> Data {
+        let (data, _) = try await URLSession.shared.data(for: request)
+        return data
     }
 }
