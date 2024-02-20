@@ -1,5 +1,8 @@
 ## EIDA Technical Assessment - Task: Build a SpaceX Launch App
 
+<img src="https://github.com/chillok/EIDASpaceX/assets/1297482/6164928a-dac0-4230-b7f3-f66cb72c8568" width="400">
+<img src="https://github.com/chillok/EIDASpaceX/assets/1297482/4addb458-8b79-4150-85ad-4d47f4acf96b" width="400">
+
 ## Provide the source code along with clear instructions on how to build and run the app
 
 This project uses the latest Xcode version (15.2) and has no external dependancies. You should be able to download and run this project using Xcode with no issues or additional setup.
