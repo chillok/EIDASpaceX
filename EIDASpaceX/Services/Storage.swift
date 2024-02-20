@@ -3,7 +3,6 @@ import SwiftData
 
 protocol StorageProtocol {
     
-    var modelContainer: ModelContainer { get }
     func store<T: PersistentModel>(_ models: [T]) throws where T: Identifiable
     func retrieveAll<T: PersistentModel>() throws -> [T]
 }
@@ -17,9 +16,15 @@ class Storage: StorageProtocol {
         case storeError
     }
     
+    var isStoredInMemoryOnly: Bool
+    
+    init(isStoredInMemoryOnly: Bool = false) {
+        self.isStoredInMemoryOnly = isStoredInMemoryOnly
+    }
+    
     lazy var modelContainer: ModelContainer = {
         let schema = Schema([Launch.self, CrewMember.self, Rocket.self])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: isStoredInMemoryOnly)
         
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])

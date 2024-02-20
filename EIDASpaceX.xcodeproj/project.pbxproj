@@ -39,7 +39,24 @@
 		694DAB882B80159B00861A71 /* LaunchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DAB872B80159B00861A71 /* LaunchesView.swift */; };
 		6963DD062B83F266000D7CB3 /* RocketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6963DD052B83F266000D7CB3 /* RocketView.swift */; };
 		69766CE02B84ACAF00076C4C /* PatchSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69766CDF2B84ACAF00076C4C /* PatchSectionView.swift */; };
+		69766CEA2B84B44F00076C4C /* LaunchesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69766CE92B84B44F00076C4C /* LaunchesViewModelTests.swift */; };
+		69766CF32B84B49600076C4C /* WebserviceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69766CF22B84B49600076C4C /* WebserviceTests.swift */; };
+		69766CF62B84B52900076C4C /* MockWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69766CF52B84B52900076C4C /* MockWebservice.swift */; };
+		69766CF82B84B5FF00076C4C /* MockStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69766CF72B84B5FF00076C4C /* MockStorage.swift */; };
+		69766CFA2B84BB0400076C4C /* MockRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69766CF92B84BB0400076C4C /* MockRouter.swift */; };
+		69766CFD2B84BCEB00076C4C /* XCTestCase+ToEventually.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69766CFC2B84BCEB00076C4C /* XCTestCase+ToEventually.swift */; };
+		69766CFF2B84C30700076C4C /* MockFailingWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69766CFE2B84C30700076C4C /* MockFailingWebservice.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69766CEB2B84B44F00076C4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 694DAB6E2B7FD25400861A71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 694DAB752B7FD25400861A71;
+			remoteInfo = EIDASpaceX;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6937E8022B80D65000A4E3D5 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
@@ -75,10 +92,25 @@
 		694DAB872B80159B00861A71 /* LaunchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchesView.swift; path = EIDASpaceX/Launches/Views/LaunchesView.swift; sourceTree = SOURCE_ROOT; };
 		6963DD052B83F266000D7CB3 /* RocketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketView.swift; sourceTree = "<group>"; };
 		69766CDF2B84ACAF00076C4C /* PatchSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchSectionView.swift; sourceTree = "<group>"; };
+		69766CE72B84B44F00076C4C /* EIDASpaceXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EIDASpaceXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69766CE92B84B44F00076C4C /* LaunchesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewModelTests.swift; sourceTree = "<group>"; };
+		69766CF22B84B49600076C4C /* WebserviceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebserviceTests.swift; sourceTree = "<group>"; };
+		69766CF52B84B52900076C4C /* MockWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWebservice.swift; sourceTree = "<group>"; };
+		69766CF72B84B5FF00076C4C /* MockStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStorage.swift; sourceTree = "<group>"; };
+		69766CF92B84BB0400076C4C /* MockRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRouter.swift; sourceTree = "<group>"; };
+		69766CFC2B84BCEB00076C4C /* XCTestCase+ToEventually.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+ToEventually.swift"; sourceTree = "<group>"; };
+		69766CFE2B84C30700076C4C /* MockFailingWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFailingWebservice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		694DAB732B7FD25400861A71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69766CE42B84B44F00076C4C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -236,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				694DAB782B7FD25400861A71 /* EIDASpaceX */,
+				69766CE82B84B44F00076C4C /* EIDASpaceXTests */,
 				694DAB772B7FD25400861A71 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -244,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				694DAB762B7FD25400861A71 /* EIDASpaceX.app */,
+				69766CE72B84B44F00076C4C /* EIDASpaceXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -271,6 +305,52 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		69766CE82B84B44F00076C4C /* EIDASpaceXTests */ = {
+			isa = PBXGroup;
+			children = (
+				69766CFB2B84BCDC00076C4C /* Common */,
+				69766CF42B84B51900076C4C /* Mocks */,
+				69766CF12B84B47200076C4C /* Services */,
+				69766CF02B84B46600076C4C /* Launches */,
+			);
+			path = EIDASpaceXTests;
+			sourceTree = "<group>";
+		};
+		69766CF02B84B46600076C4C /* Launches */ = {
+			isa = PBXGroup;
+			children = (
+				69766CE92B84B44F00076C4C /* LaunchesViewModelTests.swift */,
+			);
+			path = Launches;
+			sourceTree = "<group>";
+		};
+		69766CF12B84B47200076C4C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				69766CF22B84B49600076C4C /* WebserviceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		69766CF42B84B51900076C4C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				69766CF52B84B52900076C4C /* MockWebservice.swift */,
+				69766CFE2B84C30700076C4C /* MockFailingWebservice.swift */,
+				69766CF72B84B5FF00076C4C /* MockStorage.swift */,
+				69766CF92B84BB0400076C4C /* MockRouter.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		69766CFB2B84BCDC00076C4C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				69766CFC2B84BCEB00076C4C /* XCTestCase+ToEventually.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,6 +371,24 @@
 			productReference = 694DAB762B7FD25400861A71 /* EIDASpaceX.app */;
 			productType = "com.apple.product-type.application";
 		};
+		69766CE62B84B44F00076C4C /* EIDASpaceXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69766CED2B84B44F00076C4C /* Build configuration list for PBXNativeTarget "EIDASpaceXTests" */;
+			buildPhases = (
+				69766CE32B84B44F00076C4C /* Sources */,
+				69766CE42B84B44F00076C4C /* Frameworks */,
+				69766CE52B84B44F00076C4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69766CEC2B84B44F00076C4C /* PBXTargetDependency */,
+			);
+			name = EIDASpaceXTests;
+			productName = EIDASpaceXTests;
+			productReference = 69766CE72B84B44F00076C4C /* EIDASpaceXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -303,6 +401,10 @@
 				TargetAttributes = {
 					694DAB752B7FD25400861A71 = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					69766CE62B84B44F00076C4C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 694DAB752B7FD25400861A71;
 					};
 				};
 			};
@@ -320,6 +422,7 @@
 			projectRoot = "";
 			targets = (
 				694DAB752B7FD25400861A71 /* EIDASpaceX */,
+				69766CE62B84B44F00076C4C /* EIDASpaceXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -331,6 +434,13 @@
 			files = (
 				694DAB812B7FD25600861A71 /* Preview Assets.xcassets in Resources */,
 				694DAB7E2B7FD25600861A71 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69766CE52B84B44F00076C4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +484,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		69766CE32B84B44F00076C4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69766CF32B84B49600076C4C /* WebserviceTests.swift in Sources */,
+				69766CFA2B84BB0400076C4C /* MockRouter.swift in Sources */,
+				69766CF62B84B52900076C4C /* MockWebservice.swift in Sources */,
+				69766CEA2B84B44F00076C4C /* LaunchesViewModelTests.swift in Sources */,
+				69766CFD2B84BCEB00076C4C /* XCTestCase+ToEventually.swift in Sources */,
+				69766CFF2B84C30700076C4C /* MockFailingWebservice.swift in Sources */,
+				69766CF82B84B5FF00076C4C /* MockStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69766CEC2B84B44F00076C4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 694DAB752B7FD25400861A71 /* EIDASpaceX */;
+			targetProxy = 69766CEB2B84B44F00076C4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		694DAB822B7FD25600861A71 /* Debug */ = {
@@ -554,6 +686,42 @@
 			};
 			name = Release;
 		};
+		69766CEE2B84B44F00076C4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9L83R3487L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cillianok.EIDASpaceXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EIDASpaceX.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EIDASpaceX";
+			};
+			name = Debug;
+		};
+		69766CEF2B84B44F00076C4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9L83R3487L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cillianok.EIDASpaceXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EIDASpaceX.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EIDASpaceX";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -571,6 +739,15 @@
 			buildConfigurations = (
 				694DAB852B7FD25600861A71 /* Debug */,
 				694DAB862B7FD25600861A71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69766CED2B84B44F00076C4C /* Build configuration list for PBXNativeTarget "EIDASpaceXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69766CEE2B84B44F00076C4C /* Debug */,
+				69766CEF2B84B44F00076C4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

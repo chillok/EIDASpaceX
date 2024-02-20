@@ -122,7 +122,7 @@ class LaunchesViewModel: LaunchesViewModelProtocol, ObservableObject {
     
     @MainActor
     func resetLaunches() {
-        
+        launches = .loaded(filter(cachedLaunches, with: selection))
     }
     
     @MainActor
@@ -136,17 +136,6 @@ class LaunchesViewModel: LaunchesViewModelProtocol, ObservableObject {
         self.cachedLaunches = []
         self.launches = .loading
     }
-    
-//    @MainActor
-//    private func filterLaunches(with selection: LaunchesViewSelection) {
-//        launches = .loaded(cachedLaunches.filter { model in
-//            switch selection {
-//            case .all: return true
-//            case .failed: return model.success == false
-//            case .successful: return model.success == true
-//            }
-//        })
-//    }
     
     private func filter(_ launches: [LaunchViewViewModel], with selection: LaunchesViewSelection) -> [LaunchViewViewModel] {
         launches.filter { model in

@@ -1,7 +1,7 @@
 import SwiftData
 import Foundation
 
-extension StorageProtocol {
+extension Storage {
     
     @MainActor
     func retrieve(id: String) -> CrewMember? {
