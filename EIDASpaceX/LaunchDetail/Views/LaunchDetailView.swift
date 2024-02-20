@@ -19,7 +19,14 @@ struct LaunchDetailView<ViewModel: LaunchDetailViewModelProtocol>: View {
     var body: some View {
         VStack {
             List {
+                
                 PatchSectionView(viewModel: viewModel.data)
+                
+                if let details = viewModel.data.details {
+                    Section {
+                        Text(details)
+                    }
+                }
 
                 if !filteredCrew.isEmpty {
                     Section {
